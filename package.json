@@ -5,8 +5,6 @@
   "dependencies": {
     "@material-ui/core": "^4.7.1",
     "@material-ui/icons": "^4.5.1",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
@@ -41,21 +39,21 @@
     "eslint-config-prettier": "^6.7.0",
     "eslint-config-react-app": "^5.1.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged",
-      "pre-push": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-      "**/*.{js,css}":[
-        "eslint src",
-        "npm run format",
-        "git add"
-      ]
+  "lint-staged": {
+    "**/*.{js,css}": [
+      "eslint src",
+      "npm run format",
+      "git add"
+    ]
   }
-  
 }
