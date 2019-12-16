@@ -7,7 +7,6 @@ import theme from '../../common/theme';
 
 class App extends Component {
 	render() {
-		const { classes } = this.props;
 		return (
 			<ThemeProvider theme={theme}>
 				<Taskboard />
