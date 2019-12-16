@@ -23,7 +23,6 @@ module.exports  = {
         'react/forbid-prop-types':0,
         'react/forbid-prop-types':0,
         'react/jsx-filename-extension':0,
-        'prettier/prettier':['error'],
         'no-tabs':0,
         'comma-dangle':0,
         'indent':0,
@@ -36,7 +35,8 @@ module.exports  = {
         'class-methods-use-this':0,
         'react/no-array-index-key':0,
         'react/prefer-stateless-function':0,
-        'react/jsx-uses-vars':2
+        'react/jsx-uses-vars':2,
+        'prettier/prettier':['error']
     },env:{
         "es6":true,
         "browser":true,
